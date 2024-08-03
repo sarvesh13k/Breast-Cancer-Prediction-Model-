@@ -1,0 +1,28 @@
+**Breast Cancer Prediction Model**
+
+This project is a machine learning application that predicts the likelihood of breast cancer based on clinical features. The model is developed using a RandomForestClassifier and is deployed as a web service using Flask.
+
+Introduction:
+This project utilizes the breast cancer dataset from the UCI Machine Learning Repository to train a machine learning model that classifies breast cancer as either malignant or benign. The model is then exposed as a REST API using Flask, allowing users to obtain predictions by providing feature inputs.
+
+Modules and Libraries:
+Core Libraries
+Python: The programming language used.
+scikit-learn: For machine learning model implementation.
+pandas: For data manipulation and analysis.
+numpy: For numerical computations.
+shap: For model interpretability.
+joblib: For model serialization.
+Flask: For building the web API.
+
+Model Training
+The model training involves the following steps:
+
+Data Loading: Load the breast cancer dataset from scikit-learn.
+Data Preprocessing: Split the data into training and testing sets.
+Model Training: Train a RandomForestClassifier on the training data.
+Model Evaluation: Evaluate the model using the test data.
+Model Saving: Save the trained model to a file using joblib.
+
+Deployment:
+The model is deployed using a Flask web service. The app provides an endpoint /predict where users can send a POST request with the required features to get a prediction.
